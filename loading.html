@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<body onload="change();" style="background-color: rgb(16, 16, 16);">
+    <center>
+    <img style="margin-top: 130px;" src="Blue Circle Progression.gif">
+    <h4 id="load" style="color: rgb(255, 255, 255); letter-spacing: 1.5px;"><b>Loading, Please wait...</b></h4>
+    </center>
+</body>
+<script>
+    var time;
+    var time2;
+
+    function change(){
+        time = setTimeout(change_2, 3500);
+    }
+
+    function change_2(){
+        document.getElementById("load").innerHTML = "Initializing Database...";
+        time2 = setTimeout(go, 3500);
+    }
+
+    function go(){
+        window.location = "dashboard.html";
+    }
+</script>
+</html>

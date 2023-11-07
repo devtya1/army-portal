@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+<body background="2897838.jpg">
+        <center>
+        <marquee behavior="scroll" direction="right">
+        <b style="color: black;"><h1>Indian Authority of National and Cyber Security Portal</h1></b><span><img src="Indian-Flag-Transparent-PNG.png" height="25px" width="45px">
+        </marquee>
+        </center>
+    <div style="margin-bottom: 200px;" class="main">
+        <div class="login">
+         <h1 class="heading">Login to your account</h1>
+         <div class="input">
+          <label for="username">Username</label>
+          <input type="text" id="username" onkeypress="key();" autocomplete="false" />
+         </div>
+         <div class="input">
+          <label for="password">Password</label>
+          <input type="password" id="password" autocomplete="false" />
+         </div>
+         <div class="divider">
+            <h4 id="err"></h4>
+         </div>
+         <div class="divider"></div>
+         <button onclick="login();" class="login-btn" style="float: right;">Log In</button>
+          </button>
+         </div>
+        </div>
+       </div>
+</body>
+<script src="main.js"></script>
+</html>
